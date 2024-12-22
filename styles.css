@@ -1,0 +1,142 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #f4f4f4;
+    background-color: #1e1e2f; /* Fallback en caso de que la imagen no cargue */
+    background-image: url('file:///E:/win%2010%20y%20ubuntu/logo.png'); /* Ruta absoluta */
+    background-size: cover; /* La imagen cubre toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* La imagen se queda fija al hacer scroll */
+    height: 100vh; /* Asegura que el cuerpo ocupe toda la pantalla */
+    position: relative; /* Para el overlay */
+}
+
+/* Overlay oscuro para mejorar la visibilidad del texto */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Filtro oscuro */
+    z-index: -1; /* Asegura que el overlay esté detrás del contenido */
+}
+
+/* Header Styles */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(36, 36, 62, 0.8); /* Fondo oscuro con transparencia */
+    border-bottom: 2px solid #41416a;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffd700;
+}
+
+.main-nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #f4f4f4;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover {
+    color: #ffd700;
+}
+
+/* El enlace de contacto debe estar alineado a la derecha */
+.contact-link {
+    margin-left: auto; /* Esto empuja el enlace a la derecha */
+    font-size: 1rem;
+    color: #f4f4f4;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-link:hover {
+    color: #ffd700;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: none; /* Elimina el fondo para dejar la imagen de fondo visible */
+    color: #ffee01; /* Asegura que el texto sea blanco y visible */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Categories Section */
+.categories {
+    padding: 8rem 2rem; /* Aumenté el padding para mover más abajo las categorías */
+    text-align: center;
+}
+
+.categories h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #ffd700;
+}
+
+.category-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    padding: 2rem;
+    background-color: #302b63;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: transform 0.3s;
+    color: #fff; /* Cambié el color del texto a blanco */
+}
+
+.card:hover {
+    transform: scale(1.1);
+    background-color: #41416a;
+}
+
+/* Footer */
+.main-footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #24243e;
+    border-top: 2px solid #41416a;
+    margin-top: 5rem; /* Aumenté el espacio entre las categorías y el pie de página */
+}
+
+.main-footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Asegura que el pie de página quede al fondo */
+html, body {
+    height: 100%;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

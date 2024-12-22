@@ -1,0 +1,134 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: 'Verdana', sans-serif;
+    color: #ffffff;
+    background-color: #0a1a2e;
+}
+
+/* Header Styles */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #122b40;
+    border-bottom: 3px solid #1f5a88;
+}
+
+.logo {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #30a7e1;
+}
+
+.main-nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #d4f1ff;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.main-nav a:hover {
+    color: #30a7e1;
+    transform: scale(1.1);
+}
+
+/* Game List */
+.game-list {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.game-list ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.game-list li {
+    background-color: #184869;
+    border-radius: 15px;
+    width: 370px;
+    height: 470px; /* Ajustamos la altura para incluir el video */
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-list li:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+
+.game-list img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+
+.game-title {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    color: #30a7e1;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Ventana con iframe para el video */
+.game-video-window {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    margin-bottom: 1rem; /* Espacio debajo del video */
+    background-color: #1f5a88; /* Fondo azul oscuro */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.game-video-window iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Game Description */
+.game-description {
+    font-size: 1rem;
+    color: #d4f1ff;
+    margin: 0.5rem 0;
+    text-align: justify;
+}
+
+.game-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #30a7e1;
+    margin-top: 1rem;
+}
+
+/* Footer */
+.main-footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #122b40;
+    border-top: 3px solid #1f5a88;
+}
+
+.main-footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #d4f1ff;
+}

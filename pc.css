@@ -1,0 +1,131 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #f4f4f4;
+    background-color: #1e1e2f;
+}
+
+/* Header Styles */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #24243e;
+    border-bottom: 2px solid #41416a;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffd700;
+}
+
+.main-nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #f4f4f4;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover {
+    color: #ffd700;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(120deg, #24243e, #302b63, #0f0c29);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Game List */
+.game-list {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-evenly; /* Distribuye los elementos de manera uniforme */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a la siguiente línea si no caben */
+    gap: 20px; /* Espacio entre los recuadros */
+}
+
+.game-list ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.game-list li {
+    background-color: #302b63;
+    border-radius: 15px;
+    width: 350px; /* Hacer los recuadros más anchos */
+    height: 400px; /* Mantener una altura constante */
+    margin: 0;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra para el recuadro */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-list li:hover {
+    transform: translateY(-5px); /* Efecto de hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Sombra más intensa al pasar el ratón */
+}
+
+.game-list img {
+    width: 100%; /* Imagen ajustada al contenedor */
+    height: 200px; /* Ajustamos la altura de la imagen */
+    object-fit: cover; /* Mantener la proporción de la imagen */
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.game-title {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    color: #ffd700;
+    font-weight: bold;
+    text-transform: uppercase; /* Títulos en mayúsculas */
+}
+
+.game-description {
+    font-size: 1rem;
+    color: #f4f4f4;
+    margin: 0.5rem 0;
+}
+
+.game-price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #ffd700;
+    margin-top: 1rem;
+}
+
+/* Footer */
+.main-footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #24243e;
+    border-top: 2px solid #41416a;
+}
+
+.main-footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
